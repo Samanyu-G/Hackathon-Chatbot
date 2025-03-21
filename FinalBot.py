@@ -56,7 +56,7 @@ from PIL import Image, ImageTk
 # Configuration class
 class Config:
     # App settings
-    APP_NAME = "Wall-E"
+    APP_NAME = "Persona GPT"
     VERSION = "1.1.0"
     
     # Model settings
