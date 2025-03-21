@@ -1,0 +1,218 @@
+[2025-03-21 18:37:49] [INFO] Initializing personalities
+[2025-03-21 18:38:11] [INFO] Detected language: so
+[2025-03-21 18:38:12] [INFO] Translated from so to en
+[2025-03-21 18:38:12] [INFO] Chef Antonio processing query: Hey
+[2025-03-21 18:38:14] [INFO] Translated from en to so
+[2025-03-21 18:38:36] [INFO] Switched to Professor Amelia
+[2025-03-21 18:38:55] [INFO] Initializing personalities
+[2025-03-21 18:39:35] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 18:39:42] [INFO] Detected language: so
+[2025-03-21 18:39:43] [INFO] Translated from so to en
+[2025-03-21 18:39:43] [INFO] Bollywood Actor Raj processing query: Hey
+[2025-03-21 18:39:44] [INFO] Translated from en to so
+[2025-03-21 18:43:03] [INFO] Initializing personalities
+[2025-03-21 18:43:33] [INFO] Detected language: so
+[2025-03-21 18:43:34] [INFO] Translated from so to en
+[2025-03-21 18:43:34] [INFO] Chef Antonio processing query: hey!
+[2025-03-21 18:43:35] [INFO] Translated from en to so
+[2025-03-21 18:50:38] [INFO] Initializing personalities
+[2025-03-21 18:50:45] [INFO] Chef Antonio processing query: hey
+[2025-03-21 18:51:00] [INFO] Chef Antonio processing query: do you cook?
+[2025-03-21 18:51:16] [INFO] Chef Antonio processing query: do you cook?
+[2025-03-21 18:51:25] [INFO] Chef Antonio processing query: okay how are you?
+[2025-03-21 18:51:27] [INFO] Switched to Banker Morgan
+[2025-03-21 18:51:34] [INFO] Banker Morgan processing query: how to earn money?
+[2025-03-21 18:51:34] [INFO] Loading tokenizer for Banker Morgan
+[2025-03-21 18:51:35] [INFO] Loading model for Banker Morgan
+[2025-03-21 18:51:41] [INFO] Generated response: I'm not sure if you're being serious or not, but I'm pretty sure that's a reference to the movie The Big Lebowski.
+[2025-03-21 18:56:54] [INFO] Initializing personalities
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=176, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=194, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=208, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=221, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=227, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=229, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 18:57:01] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=232, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=233, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=234, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=234, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=234, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=234, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=235, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=236, Volume=1.0
+[2025-03-21 18:57:02] [INFO] Updated TTS settings: Rate=236, Volume=1.0
+[2025-03-21 18:57:06] [INFO] Chef Antonio processing query: hey
+[2025-03-21 18:57:12] [INFO] Updated TTS settings: Rate=237, Volume=1.0
+[2025-03-21 18:57:12] [INFO] Updated TTS settings: Rate=238, Volume=1.0
+[2025-03-21 18:57:13] [INFO] Updated TTS settings: Rate=239, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=240, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=244, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=245, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=246, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=247, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=249, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=250, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=250, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=250, Volume=1.0
+[2025-03-21 18:57:14] [INFO] Updated TTS settings: Rate=250, Volume=1.0
+[2025-03-21 18:57:18] [INFO] Chef Antonio processing query: hey
+[2025-03-21 19:01:03] [INFO] Initializing personalities
+[2025-03-21 19:01:10] [INFO] Chef Antonio processing query: hey
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=175, Volume=1.0
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=181, Volume=1.0
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=185, Volume=1.0
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=192, Volume=1.0
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=199, Volume=1.0
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=207, Volume=1.0
+[2025-03-21 19:01:18] [INFO] Updated TTS settings: Rate=211, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=214, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=216, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=217, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=218, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=220, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=223, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=225, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=226, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=227, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=227, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=227, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=228, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=228, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=228, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=228, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=229, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=229, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=229, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=230, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=231, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=233, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=233, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=235, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=235, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=236, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=236, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=237, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=237, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=238, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=238, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=238, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=239, Volume=1.0
+[2025-03-21 19:01:19] [INFO] Updated TTS settings: Rate=239, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=239, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=239, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=240, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=240, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=240, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=241, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=241, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=241, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=242, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=242, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=242, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=242, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=243, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=243, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=243, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=244, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=244, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=244, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=245, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=245, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=245, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=245, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=246, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=246, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=246, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=247, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=247, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=247, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=248, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=248, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=248, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=249, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=249, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=249, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=250, Volume=1.0
+[2025-03-21 19:01:20] [INFO] Updated TTS settings: Rate=250, Volume=1.0
+[2025-03-21 19:01:26] [INFO] Chef Antonio processing query: food
+[2025-03-21 19:01:26] [INFO] Loading tokenizer for Chef Antonio
+[2025-03-21 19:01:26] [INFO] Loading model for Chef Antonio
+[2025-03-21 19:01:31] [INFO] Generated response: -obsessed manner: foodI'm not sure if you're serious or not, but I'm going to go with the latter.
+[2025-03-21 19:02:26] [INFO] Initializing personalities
+[2025-03-21 19:02:30] [INFO] Chef Antonio processing query: hey
+[2025-03-21 19:05:37] [INFO] Initializing personalities
+[2025-03-21 19:05:42] [INFO] Chef Antonio processing query: hi
+[2025-03-21 19:06:35] [INFO] Initializing personalities
+[2025-03-21 19:06:49] [INFO] Switched to Professor Amelia
+[2025-03-21 19:06:58] [INFO] Professor Amelia processing query: do you know history?
+[2025-03-21 19:06:58] [INFO] Loading tokenizer for Professor Amelia
+[2025-03-21 19:06:59] [INFO] Loading model for Professor Amelia
+[2025-03-21 19:07:02] [INFO] Generated response: I do not. I'm a history major.
+[2025-03-21 19:07:25] [INFO] Professor Amelia processing query: are you horny right now ?
+[2025-03-21 19:08:19] [INFO] Professor Amelia processing query: let's have sex in the backyard, with your panties on my chest
+[2025-03-21 19:08:38] [INFO] Professor Amelia processing query: no issues babe, i'll train you
+[2025-03-21 19:10:58] [INFO] Initializing personalities
+[2025-03-21 19:11:02] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:11:08] [INFO] Bollywood Actor Raj processing query: hey actor
+[2025-03-21 19:11:08] [INFO] Loading tokenizer for Bollywood Actor Raj
+[2025-03-21 19:11:09] [INFO] Loading model for Bollywood Actor Raj
+[2025-03-21 19:11:14] [INFO] Generated response: I'm not sure if you're serious or not, but I'm pretty sure that's not what he said.
+[2025-03-21 19:11:39] [INFO] Initializing personalities
+[2025-03-21 19:11:42] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:11:48] [INFO] Bollywood Actor Raj processing query: heyy
+[2025-03-21 19:12:18] [INFO] Initializing personalities
+[2025-03-21 19:12:23] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:12:25] [INFO] Bollywood Actor Raj processing query: hey
+[2025-03-21 19:21:24] [INFO] Initializing personalities
+[2025-03-21 19:21:36] [INFO] Chef Antonio processing query: heyy how are you?
+[2025-03-21 19:22:45] [INFO] Initializing personalities
+[2025-03-21 19:22:51] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:22:56] [INFO] Bollywood Actor Raj processing query: hey
+[2025-03-21 19:25:10] [INFO] Initializing personalities
+[2025-03-21 19:25:16] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:25:24] [INFO] Bollywood Actor Raj processing query: hey!!
+[2025-03-21 19:25:40] [INFO] Initializing personalities
+[2025-03-21 19:25:46] [INFO] Chef Antonio processing query: hey
+[2025-03-21 19:25:48] [INFO] Switched to Professor Amelia
+[2025-03-21 19:25:57] [INFO] Professor Amelia processing query: hey
+[2025-03-21 19:26:03] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:26:14] [INFO] Bollywood Actor Raj processing query: hey
+[2025-03-21 19:26:23] [INFO] Switched to Banker Morgan
+[2025-03-21 19:26:28] [INFO] Banker Morgan processing query: hey
+[2025-03-21 19:32:39] [INFO] Initializing personalities
+[2025-03-21 19:32:47] [INFO] Switched to Chef Antonio
+[2025-03-21 19:32:54] [INFO] Chef Antonio processing query: hey! how are you?
+[2025-03-21 19:32:59] [INFO] Switched to Professor Amelia
+[2025-03-21 19:33:04] [INFO] Professor Amelia processing query: hey how are you?
+[2025-03-21 19:33:08] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:33:12] [INFO] Bollywood Actor Raj processing query: hey actor
+[2025-03-21 19:33:12] [INFO] Loading tokenizer for Bollywood Actor Raj
+[2025-03-21 19:33:13] [INFO] Loading model for Bollywood Actor Raj
+[2025-03-21 19:33:18] [INFO] Generated response: I'm not sure if you're serious or not, but I'm pretty sure that's not what he said.
+[2025-03-21 19:33:23] [INFO] Switched to Banker Morgan
+[2025-03-21 19:33:33] [INFO] Banker Morgan processing query: how do i earn money
+[2025-03-21 19:33:33] [INFO] Loading tokenizer for Banker Morgan
+[2025-03-21 19:33:33] [INFO] Loading model for Banker Morgan
+[2025-03-21 19:33:37] [INFO] Generated response: I'm not sure if you're serious or not, but I'm pretty sure that's a reference to the movie The Big Lebowski.
+[2025-03-21 19:34:08] [INFO] Updated TTS settings: Rate=175, Volume=1.0
+[2025-03-21 19:58:52] [INFO] Initializing personalities
+[2025-03-21 19:59:01] [INFO] Chef Antonio processing query: hey
+[2025-03-21 19:59:05] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 19:59:06] [INFO] Switched to Professor Amelia
+[2025-03-21 19:59:06] [INFO] Switched to Banker Morgan
+[2025-03-21 19:59:24] [INFO] Initializing personalities
+[2025-03-21 19:59:34] [INFO] Chef Antonio processing query: hey
+[2025-03-21 20:00:08] [INFO] Initializing personalities
+[2025-03-21 20:03:15] [INFO] Initializing personalities
+[2025-03-21 20:03:24] [INFO] Chef Antonio processing query: hey
+[2025-03-21 20:03:32] [INFO] Switched to Professor Amelia
+[2025-03-21 20:03:33] [INFO] Switched to Bollywood Actor Raj
+[2025-03-21 20:12:55] [INFO] Initializing personalities
+[2025-03-21 20:13:06] [INFO] Chef Antonio processing query: hey
