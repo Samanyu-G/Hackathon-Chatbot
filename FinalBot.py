@@ -6,6 +6,9 @@ import time
 import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox
 import importlib.util
+import requests
+import math
+from deep_translator import GoogleTranslator
 
 # Function to check if module is installed
 def is_module_installed(module_name):
@@ -53,7 +56,7 @@ from PIL import Image, ImageTk
 # Configuration class
 class Config:
     # App settings
-    APP_NAME = "AI Voice Assistant"
+    APP_NAME = "Wall-E"
     VERSION = "1.1.0"
     
     # Model settings
@@ -105,7 +108,15 @@ class Logger:
         except Exception as e:
             print(f"Error writing to log file: {e}")
 
-# Improved PersonalityBot class
+
+import requests
+import math
+
+import requests
+import math
+from deep_translator import GoogleTranslator
+
+
 class PersonalityBot:
     def __init__(self, name, background, speaking_style, knowledge_domains, catchphrases, avatar=None, voice_settings=None):
         self.name = name
@@ -167,8 +178,23 @@ class PersonalityBot:
         # Check relevance
         relevant = self.is_query_relevant(query)
         
+        if not relevant and "Professor" in self.name:
+            # basic math operations for Professor Amelia
+            math_response = self.handle_math(query)
+            if math_response is not None:
+                return math_response
+        
+        if not relevant and "Banker" in self.name:
+            # advanced banking problems for Banker Morgan
+            banking_response = self.handle_banking(query)
+            if banking_response is not None:
+                return banking_response
+        
         if not relevant:
-            return self.get_off_topic_response(language)
+            # Check for general queries
+            general_response = self.handle_general_queries(query)
+            if general_response is not None:
+                return general_response
         
         try:
             # Generate a response
@@ -217,6 +243,166 @@ class PersonalityBot:
         
         return random.choice(responses[personality_type])
     
+    def handle_math(self, query):
+        """Handle basic math operations."""
+        try:
+            # Evaluate the math expression safely
+            result = eval(query, {"__builtins__": {}})
+            self.logger.log(f"Math query '{query}' evaluated to {result}")
+            return f"The result of {query} is {result}"
+        except Exception as e:
+            self.logger.log(f"Error evaluating math query '{query}': {e}", "WARNING")
+            return None
+    
+    def handle_banking(self, query):
+        """Handle advanced banking problems."""
+        try:
+            if "loan" in query.lower() and "calculate" in query.lower():
+                # Example: Calculate loan payment
+                # Query format: calculate loan payment principal=100000 rate=5 time=15
+                parameters = self.parse_parameters(query)
+                principal = float(parameters.get("principal")) # type: ignore
+                rate = float(parameters.get("rate")) / 100 / 12 # type: ignore
+                time = int(parameters.get("time")) * 12 # type: ignore
+                if principal and rate and time:
+                    payment = (principal * rate) / (1 - (1 + rate) ** -time)
+                    self.logger.log(f"Loan payment calculated: {payment}")
+                    return f"The monthly loan payment is {payment:.2f}"
+            
+            # Add more banking-related math operations here
+            
+            self.logger.log(f"Banking query '{query}' is not recognized")
+            return None
+        except Exception as e:
+            self.logger.log(f"Error handling banking query '{query}': {e}", "WARNING")
+            return None
+    
+    def parse_parameters(self, query):
+        """Parse parameters from the query string."""
+        parameters = {}
+        parts = query.split()
+        for part in parts:
+            if "=" in part:
+                key, value = part.split("=")
+                parameters[key] = value
+        return parameters
+    
+    def handle_general_queries(self, query):
+        """Handle general queries such as weather, jokes, and translations."""
+        if "weather" in query.lower():
+            return self.get_weather(query)
+        if "joke" in query.lower():
+            return self.tell_joke()
+        if "translate" in query.lower():
+            return self.translate_text(query)
+        if "capital" in query.lower():
+            return self.get_capital(query)
+        
+        return None
+    
+    def get_weather(self, query):
+        """Fetch weather information using an API."""
+        try:
+            
+            location = query.split("weather in")[-1].strip()
+            if not location:
+                return "Please specify a location."
+            
+            api_key = "your_openweather_api_key" 
+            url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={api_key}&units=metric"
+            response = requests.get(url)
+            data = response.json()
+            
+            if data["cod"] != 200:
+                return "I couldn't find the weather information for that location."
+            
+            weather = data["weather"][0]["description"]
+            temp = data["main"]["temp"]
+            return f"The current weather in {location} is {weather} with a temperature of {temp}°C."
+        except Exception as e:
+            self.logger.log(f"Error fetching weather: {e}", "ERROR")
+            return "I couldn't fetch the weather information right now."
+    
+    def tell_joke(self):
+        """Fetch a random joke using an API."""
+        try:
+            url = "https://official-joke-api.appspot.com/random_joke"
+            response = requests.get(url)
+            joke = response.json()
+            return f"Here's a joke for you: {joke['setup']} - {joke['punchline']}"
+        except Exception as e:
+            self.logger.log(f"Error fetching joke: {e}", "ERROR")
+            return "I couldn't fetch a joke right now."
+    
+    def get_capital(self, query):
+        """Fetch the capital of a specified country."""
+        try:
+            # Extract the country from the query
+            country = query.split("capital of")[-1].strip()
+            if not country:
+                return "Please specify a country."
+            
+            url = f"https://restcountries.com/v3.1/name/{country}?fullText=true"
+            response = requests.get(url)
+            data = response.json()
+            
+            if not data or "status" in data:
+                return "I couldn't find the capital for that country."
+            
+            capital = data[0]["capital"][0]
+            return f"The capital of {country} is {capital}."
+        except Exception as e:
+            self.logger.log(f"Error fetching capital: {e}", "ERROR")
+            return "I couldn't fetch the capital information right now."
+    
+    def translate_text(self, query):
+        """Translate text between languages."""
+        try:
+            # Language mapping
+            language_map = {
+                'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy', 'assamese': 'as',
+                'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn',
+                'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb', 'chichewa': 'ny',
+                'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr',
+                'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en',
+                'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr',
+                'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn',
+                'gujarati': 'gu', 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi',
+                'hmong': 'hmn', 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id',
+                'irish': 'ga', 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk',
+                'khmer': 'km', 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku',
+                'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln',
+                'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai',
+                'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr',
+                'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne',
+                'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl',
+                'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm',
+                'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn',
+                'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so', 'spanish': 'es',
+                'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta', 'tatar': 'tt',
+                'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk',
+                'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi',
+                'welsh': 'cy', 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu'
+            }
+            
+            # Extract source and target languages and text from the query
+            parts = query.split("translate ")[-1].strip().split(" to ")
+            text = parts[0].strip()
+            target_language = parts[1].strip().lower() if len(parts) > 1 else "en"
+            
+            if target_language not in language_map:
+                return f"Unsupported language: {target_language}. Please provide a valid target language."
+
+            language_code = language_map[target_language]
+            
+            translator = GoogleTranslator(source='auto', target=language_code)
+            translated = translator.translate(text)
+            self.logger.log(f"Translated text: {translated}")
+            return f"The translation in {target_language} is: {translated}"
+        except Exception as e:
+            self.logger.log(f"Error translating text: {e}", "ERROR")
+            return "I couldn't translate the text right now."
+    
     def generate_response(self, query):
         """Generate a response using the language model with the bot's personality injected."""
         try:
@@ -249,8 +435,8 @@ class PersonalityBot:
         except Exception as e:
             self.logger.log(f"Error generating response: {e}", "ERROR")
             return "I'm having trouble formulating a response right now."
+        # Improved VoiceAssistant class
 
-# Improved VoiceAssistant class
 class VoiceAssistant:
     def __init__(self):
         self.logger = Logger()
@@ -1011,8 +1197,8 @@ class ModernAssistantGUI:
             sv_ttk.set_theme("light")
 
             # Main background and chat area
-            self.root.config(bg="#e3f6ff")  # Light cyan futuristic
-            self.chat_text.config(bg="#eef2ff", fg="#0f3460", insertbackground="#0057e7")  # Soft neon blue
+            self.root.config(bg="#e3f6ff")  
+            self.chat_text.config(bg="#eef2ff", fg="#0f3460", insertbackground="#0057e7") 
             
             # Buttons
             self.mic_button.config(style="Futuristic.TButton")
@@ -1020,9 +1206,9 @@ class ModernAssistantGUI:
             self.clear_button.config(style="FuturisticAccent.TButton")
             
             # Labels
-            self.personality_name.config(foreground="#0057e7")  # Electric blue
-            self.personality_background.config(foreground="#0f3460")  # Deep sci-fi blue
-            self.personality_style.config(foreground="#4a4a4a")  # Dark metallic gray
+            self.personality_name.config(foreground="#0057e7")  
+            self.personality_background.config(foreground="#0f3460") 
+            self.personality_style.config(foreground="#4a4a4a")  
             
             # Frames & Borders
             self.personality_frame.config(borderwidth=2, relief="ridge", bg="#d6ecff") # type: ignore
